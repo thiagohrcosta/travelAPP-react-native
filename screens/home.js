@@ -61,7 +61,7 @@ const Home = () => {
 
   const goToPost = () => {
     navigation.navigate('Post');
-    
+
   }
 
   return (
@@ -133,16 +133,15 @@ const Home = () => {
             }}
           />
         </View>
-        <View style={{marginBottom: 60}}>
+        <View style={{marginBottom: 40}}>
           <View style={{padding: 20, flexDirection: 'row', justifyContent: 'space-between'}}>
             <Text style={{fontSize: 22, fontWeight: 'bold'}}>Recently Viewed</Text>
             <Text style={{fontSize: 14, fontWeight: 'bold', color: '#ff6200' }}>View All</Text>
           </View>
-        </View>
         <Image 
           source={recentImage}
           style={{width: '92%', height: 250, borderRadius: 10, alignSelf: 'center' }}
-        />
+          />
         <View style={{position: 'absolute', bottom: 0, padding: 16}}>
           <View style={{flexDirection: 'row'}} >
             <Feather name='map-pin'
@@ -158,6 +157,7 @@ const Home = () => {
             Positano is a village and comune on the Amalfi Coast, in Campania, Italy, mainly in an enclave in the hills leading down to the cost.
           </Text>
         </View>
+      </View>
       </ScrollView>
     </View>
   );
